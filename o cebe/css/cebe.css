@@ -1,0 +1,544 @@
+.menu {
+    background-color:#2e0632;
+    display: flex;
+    position: absolute;
+    box-sizing: border-box;  
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content:space-between ;
+    align-items: center;
+    left: calc(50% - 1300px/2);
+    top: calc(50% - 80px/2 - 346px);
+}
+.info_menu{
+    display: flex;
+    align-self: center;
+    padding: 0;
+    margin: auto;
+    list-style:none;
+    padding-left: 400px;
+}
+.menu_link, .sidebar_link {
+    font-family: "Roboto";
+    align-items: center;
+    display: flex;
+    padding: 28px  18px;
+    background-color: #2e0632;
+    color: #d4a9c7;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    cursor:pointer;
+    
+}
+.active_link{
+    color:rgb(18, 8, 14);
+    background-color: #d4a9c7;
+    text-decoration: none;
+}
+.menu_link:hover {
+    background-color: #c4b5b5;
+    color:  #2e0632;
+    text-decoration-line: none ;
+    transition: .2s all;
+}
+.footer {
+    position: absolute;
+    width: 1300px;
+    height: 60px;
+    left: calc(50% - 1300px/2);
+    top: calc(50% - 80px/2 + 610px);    
+    background-color: #2e0632;
+    color: #FFFFFF80;
+
+}
+.footer_text {
+    position: absolute;
+    width: 211px;
+    height: 23px;
+    left: 539px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+.info_image {
+    width: 47px;
+    height: 47px;
+    top: 25px;
+}
+.info__image2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    margin-right: 35px;
+    }
+.info {
+    max-width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.content {
+    margin: 100px;
+    font-family: "Roboto"; 
+    
+}
+.content1 {
+   margin: 0 0 0 100px;
+   position: absolute;
+   font-family: 'Roboto';
+   font-style: normal;
+    font-weight: 500;
+    top: 410px;
+    left: 468px;
+}
+.info__dolnoct {
+    font-family: 'Roboto'; 
+    font-style: normal;
+    font-weight: 500;  
+    font-size: 20px; 
+    width: 800px;
+    left: 500px;
+    position: absolute;
+    line-height: 2.5;
+}
+.project {
+    margin: -15px auto 0 auto;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.plan {
+    margin: 0;
+    left: 566px; 
+    top: 635px;
+    position: absolute;
+}
+.plan2 {  
+    margin: 0;
+    left: 1180px; 
+    top: 635px;
+    position: absolute;
+}
+
+
+
+/*social*/
+
+.info__vk {
+    padding: 20px  30px 0 300px;
+}
+.info__tg {
+ padding: 20px 30px 0 0;
+}
+
+.networks {
+    left: 550px;
+    position: absolute;
+    top: 100px;
+    font-family: 'Roboto';
+}
+
+.info_social {
+    left: 500px;
+    top: 220px;
+    position: absolute;
+}
+
+/*hobby*/
+
+.info__hobby {
+    text-align:justify;
+    text-indent: 40px;
+    max-width: 1280px;
+    font-family: "Roboto";
+    font-weight: 400;
+    position: absolute;
+    top:80px;
+    left: 100px;
+    font-size: 24px;
+    line-height: 2.0;
+}
+.info__text {
+    font-family: "Roboto";
+    font-weight: 400;
+    position: absolute;
+    top:350px;
+    left: 620px;
+}
+.drawings {
+    margin: 450px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.drawing,.drawing1, .drawing2,.drawing3,.drawing4 {
+    padding-left: 20px;
+}
+
+.sidebar{
+    position: fixed;
+    left: -1000%;
+    top : 70px;
+    transition: all .2s;
+}
+.sidebar_list{
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.sidebar_link{
+    text-decoration: none;
+    width: 100%;
+}
+.sidebar_item{
+    padding: 3px;
+    transition: .2s all;
+    cursor: pointer;
+}
+.sidebar_item:hover{
+    padding-left: 9px;
+}
+.menu_bars{
+    font-size: 2rem;
+    color: #fff;
+    padding: 20px;
+    cursor: pointer;
+}
+.menu_icon{
+    display: none;
+}
+/*Планшет*/
+@media screen and (max-width: 768px) {
+    .menu{
+        left: calc(50% - 768px/2);
+        top: calc(50% - 80px/2 - 301px);
+        width: 100%;
+    }
+    .info__vk {
+        position: absolute;
+        left: 323px;
+        top: -10px;
+    }
+    .info__tg {
+        position:absolute;
+        left: 692px;
+        top: -10px;
+    }
+    .menu_link {
+        font-size: 16px;
+        display: none;
+    }
+    .info__text{
+        font-size: 25px;
+        line-height: 18px;
+        left: 311px;
+        top: 328px;
+    }
+    .info__image2{
+        width: 200px;
+        height: 200px;
+        left: 290px;
+        top: 94px;
+        position: absolute;
+    }
+    .content1 {
+        left: 128px;
+        top: 590px;
+    }
+    .project {
+        left: 20px;
+    }
+    .info_project {
+        width: 200px;
+        height: 134px;
+        top: 657px;
+        left: 20px;
+        position: absolute;
+    }
+    .info_project1 {
+        width: 190px;
+        height: 134px;
+        top: 657px;
+        left: 436px;
+        position: absolute;
+    }
+    .info__plan {
+        width: 124px;
+        height: 70px;
+        top: 653px;
+        left: 242px;
+        position: absolute;
+    }
+    .info_plan2 {
+        width: 99px;
+        height: 79px;
+        position: absolute;
+        top: 644px;
+        left: 646px;
+    }
+    .plan {
+        width: 122px;
+        height: 66px;
+        left: 240px;
+        top: 728px;
+        position: absolute;
+    }
+    .plan2 {
+        width: 106px;
+        height: 78px;
+        left: 639px;
+        top: 720px;
+        position: absolute;
+    }
+    .footer{
+        width: 768px;
+        left: calc(50% - 768px/2);
+        top: calc(50% - 80px/2 + 585px);
+    }
+    .footer_text{
+        left: 278px;
+    }
+    .menu_icon{
+        display: block;
+    }
+    .info__hobby {
+        font-size: 20px;
+        left: 10px;
+        top: 60px;
+        max-width: 740px;
+   }
+    .drawings {
+         max-width: 768px;
+         flex-wrap: wrap;
+         position: absolute;
+         top: -47px;
+         left: -28px;
+    }
+    .drawing {
+        width: 154px;
+        height: 200px;
+        position: absolute;
+        top: 10px;
+        left: -135px;
+    }
+    .drawing1 {
+        width: 260px;
+        height: 200px;
+        position: absolute;
+        top: 235px;
+        left: -362px;
+    }
+    .drawing2 {
+        width: 120px;
+        height: 200px;
+        position: absolute;
+        top: -8px;
+        left: -359px;
+    }
+    .drawing3 {
+        width: 260px;
+        height: 200px;
+        position: absolute;
+        top: 235px;
+        left: -1px;
+    }
+    .drawing4 {
+        width: 158px;
+        height: 200px;
+        position: absolute;
+        top: -8px;
+        left: 100px;
+    }
+    .sidebar_show{
+        left: 0;
+    }
+    .info__dolnoct{
+        left: 142px;
+        top: 340px;
+    }
+    .info_any{
+        position: absolute;
+        top: 290px;
+        left: 290px;
+    }
+}
+/*Моб. устр*/
+@media screen and (max-width: 480px) {
+    .menu{
+    left: calc(50% - 480px/2);
+    top: calc(50% - 80px/2 - 301px);
+    width: 100%;
+    }
+    .info__vk {
+        position: absolute;
+        left: 346px;
+        top: 10px;
+        padding: 0 0 0 0;
+    }
+    .info__tg {
+        position: absolute;
+        left: 409px;
+    }
+    .info_image {
+        left: 50px;
+    }
+    .info__image2{
+        width: 200px;
+        height: 200px;
+        left: 137px;
+        top: 88px;
+        position: absolute;
+    }
+    .info{
+    font-size: 14px;
+    width: 430px;
+    left: 47px;
+    }
+    .info_menu {
+    left: 100px;
+    }
+    .info_text {
+        font-size: 10px;
+        width: 430px;
+        left: 47px;
+    }
+    .content1 {
+        left: -30px;
+        top: 505px;
+        font-size: 20px;
+    }
+    .project {
+        max-width: 543px;
+        flex-wrap: wrap;
+        position: absolute;
+        top: -67px;
+        left: -47px;
+    }
+    .info_project {
+        width: 446px;
+        height: 217px;
+        left: 62px;
+        position: absolute;
+        top: 632px;
+    }
+    .info__plan {
+        width: 186px;
+        height: 133px;
+        left: 87px;
+        position: absolute;
+        top: 851px;
+    }
+    .info_plan2 {
+        width: 186px;
+        height: 133px;
+        left: 82px;
+        position: absolute;
+        top: 1262px;
+    }
+    .info_project1 {
+        width: 446px;
+        height: 260px;
+        top: 995px;
+        left: 62px;
+        position: absolute;
+    }
+    .plan {
+        width: 186px;
+        height: 133px;
+        left: 300px;
+        position: absolute;
+        top: 851px;
+    }
+    .plan2{
+        width: 186px;
+        height: 133px;
+        left: 294px;
+        position: absolute;
+        top: 1258px;
+    }
+    .footer{
+        width: 480px;
+        left: calc(50% - 480px/2);
+        top: calc(50% - 80px/2 + 1049px);
+    }
+    .footer_text{
+    left: 146px;
+    }
+    .info__hobby {
+        font-size: 15px;
+        left: 10px;
+        width: 460px;
+        top: 60px;
+    }
+    .info__text {
+        font-size: 20px;
+        line-height: 18px;
+        left: 194px;
+        top: 310px;
+    }
+    .drawings {
+    max-width: 543px;
+    flex-wrap: wrap;
+    position: absolute;
+    top: -62px;
+    left: -47px;
+    }
+    .drawing {
+        width: 180px;
+        height: 200px;
+        position: absolute;
+        top: -26px;
+        left: -262px;
+    }
+    .drawing1 {
+        width: 189px;
+        height: 136px;
+        position: absolute;
+        top: 194px;
+        left: -248px;
+    }
+    .drawing2 {
+        width: 134px;
+        height: 200px;
+        position: absolute;
+        top: 352px;
+        left: -218px;
+    }
+    .drawing3 {
+        width: 226px;
+        height: 160px;
+        position: absolute;
+        top: 576px;
+        left: -264px;
+    }
+    .drawing4 {
+        width: 160px;
+        height: 176px;
+        position: absolute;
+        top: 760px;
+        left: -234px;
+    }
+    .info__dolnoct {
+        left: 70px;
+        top: 321px;
+        font-size: 15px;
+    }
+    .info_any{
+        position: absolute;
+        top: 300px;
+        left: 174px;
+    }
+}

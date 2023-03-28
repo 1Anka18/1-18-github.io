@@ -3,47 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="http://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic,latin" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./styles.css">
-    <title>сайт группы</title>
-<style type="text/css" id="operaUserStyle"></style></head>
-<body class="page">
-    <header class="header">
-         <img src="images/logo.png" alt="логотип" class="info__image">
-        <ul class="info__menu">
-            <li>
-          <a class="menu__link" href="./index.html" >Главная</a>      
-            </li>
-            <li>
-                <a class="menu__link"  href="./students.html">Cтуденты</a>
-            </li>
-            <li>
-                <a class="menu__link" href="./about.html">О курсе</a>
-            </li>
-            <li>
-                <a class="menu__link" href="./contacts.html" >Контакты</a>
-            </li>
-        </ul>
-        <a class="login__button">Войти</a>    
-    </header>
-    <main class="main">
-        <h1 class="main__heading">Как нас найти 🗺️️</h1>
-        <img  class="about__photo" src="./images/kon.jpg" width="1268px" height="370px">
-        <p class="main__text">Наши контакты</p>
-        <p class="text__info">Адрес: г. Санкт-Петербург, Дворцовая пл., 2, 190000 
-        Тел: +7 (812) 555-55-55</p>
-    </main>
-    
-	<footer class="info__footer">
-        <p class="footer__text">
-            2022 © 
-        </p>
-        <p class="footer__text rs2">
-            учебный центр
-        </p>
-    </footer>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.css"  rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <style type="text/css" id="operaUserStyle">
+    </style>
+</head>
+<body>
+<header>
+    <div class="menu">
+    <div class="menu_icon"><i class="fa-solid fa-bars menu_bars"></i></div>
+    <img src="images/logo.png" alt="логотип" class="info_image">
+    <ul class = "info_menu">
+		<li><a class="menu_link" href = "./index.html">Главная</a></li>
+		<li><a class="menu_link" href = "./students.html">Cтуденты</a></li>
+		<li><a class="menu_link" href = "./about.html">О курсе</a></li>
+        <li><a class="menu_link active_link" href = "./contacts.html">Контакты</a></li> 
+    </ul>
+    <button class="login_button"> Войти</button>
+</div>
+</header>
+<main class="main">
+    <h1 class="heading2">Как нас найти 🗺️️</h1>
+    <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A1c8c27fc4b870029219289007855ab34cd651eed6c38158b471419463acf9250&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+    <p class="main_text">Наши контакты</p>
+    <p class="text_info">Адрес: г. Санкт-Петербург, Дворцовая пл., 2, 190000 </p>
+   <p class="text_info1">Тел: +7 (812) 555-55-55</p>
+</main>
+<footer class="footer">
+    <p class="footer_text">
+        2022 © учебный центр
+    </p>
+</footer>
+<div class="overlay">
+    <div class="login_popup">
+        <h2 class="login_heading"> Войти на сайт </h2>
+        <img  class="popup_close" src="./images/close.svg" alt="иконка закрытия">
+    <form  class="login_form">
+        <input class="form_input" name="login" type="text" placeholder="Логин" required>
+        <input class="form_input" name="password" type="text" placeholder="Пароль" required>
+        <button class="popup_button" type="submit">Войти</button>
+    </form>
+    </div>
+</div>
+<nav class="sidebar sidebar_show">
+    <ul class="sidebar_list">
+        <li class="sidebar_item"><a class="sidebar_link" href = "./index.html">Главная</a></li>
+		<li class="sidebar_item"><a class="sidebar_link" href = "./students.html">Cтуденты</a></li>
+		<li class="sidebar_item"><a class="sidebar_link" href = "./about.html">О курсе</a></li>
+        <li class="sidebar_item"><a class="sidebar_link" href = "./contacts.html">Контакты</a></li>
+    </ul>
+</nav>
+<script src = "js/popup.js"></script>
+<script src = "js/sidebar.js"></script>
 </body>
 </html>
